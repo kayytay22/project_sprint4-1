@@ -1,0 +1,9 @@
+numpy
+seaborn
+pandas
+streamlit
+altair
+plotly
+plotly-express
+pyarrow
+matplotlib
