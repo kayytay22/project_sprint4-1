@@ -1,9 +1,9 @@
-numpy
-seaborn
-pandas
-streamlit
-altair
-plotly
-plotly-express
-pyarrow
-matplotlib
+import numpy
+import seaborn
+import pandas
+import streamlit
+import altair
+import plotly
+import plotly-express
+import pyarrow
+import matplotlib
