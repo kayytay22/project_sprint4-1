@@ -1,9 +1,9 @@
-import numpy
-import seaborn
-import pandas
-import streamlit
+import numpy as np
+import seaborn as sn
+import pandas as pd
+import streamlit as st
 import altair
 import plotly
-import plotly-express
+import plotly-express as px
 import pyarrow
-import matplotlib
+from matplotlib import pyplot as plt
