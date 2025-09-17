@@ -44,4 +44,7 @@ This configuration file will tell Render where to look in order to listen to our
 Next we'll go to Render.com and creat a new web service that is linked to our Github repository.
 When configuring the web service, add 'pip install streamlit & pip install -r requirements.txt' to the build command. And add 'streamlit run app.py' to the start command. Finally, deploy to Render and wait for the build to succeed. 
 
+This app can be found at https://project-sprint4-1.onrender.com/ 
+Thank you! Enjoy the site.
+
 
