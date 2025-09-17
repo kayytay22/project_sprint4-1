@@ -26,3 +26,22 @@ The first visual will be the dataframe itself displayed with st.dataframe(), but
 The next visual was our Odometer Reading vs Condition of vehicle Histogram. We used st.multiselect() again to filter the unique condition statuses, and then used pyplot from matplotlib to display a simple histogram with all of the conditions overlapping in different colors. The user can select however many conditions to view to compare the distributions, and the histogram will change in time with the selection on both axes so that the data is easier to read and view. We used st.pyplot() to launch it.
 
 Our last visual, the scatter plot, was created with plotly.express since we want it to be just a bit more interactive with a legend that can be clicked on to filter the plot. We included instructions to double click on the brand they want to see by itself, or they can click on a brand to remove it from the overall plot to better see comparisons. Once the plot was created we used st.plotly_chart() to launch it. 
+
+Once the app.py file is finished and you can successfully run your app through your local machine (go to terminal - project folder - type 'streamlit run app.py'), make sure that you create 2 new files in your repository. The first being a requirement.txt file that lists all of the libaries used to create the app.
+
+Second, we need to add the configuration file to the git repository. Create the .streamlit directory, then add the config.toml file there, the following content must be present in the .streamlit/config.toml file:
+
+[server]
+headless = true
+port = 10000
+
+[browser]
+serverAddress = "0.0.0.0"
+serverPort = 10000
+
+This configuration file will tell Render where to look in order to listen to our Streamlit app when hosting it on its servers.
+
+Next we'll go to Render.com and creat a new web service that is linked to our Github repository.
+When configuring the web service, add 'pip install streamlit & pip install -r requirements.txt' to the build command. And add 'streamlit run app.py' to the start command. Finally, deploy to Render and wait for the build to succeed. 
+
+
